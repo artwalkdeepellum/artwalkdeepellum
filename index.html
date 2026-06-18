@@ -25,22 +25,35 @@
         padding: 80px 24px;
     }
 
-    header {
+    /* ===== ARCHIVE HEADER ===== */
+    .archive-header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 18px;
         margin-bottom: 60px;
     }
 
-    h1 {
-        font-size: 2.4rem;
+    .logo {
+        width: 64px;
+        height: 64px;
+        object-fit: contain;
+        opacity: 0.9;
+    }
+
+    .institution {
+        font-size: 1.4rem;
+        letter-spacing: 2px;
         font-weight: normal;
-        letter-spacing: 1px;
-        margin-bottom: 10px;
     }
 
-    .subtitle {
-        font-size: 1rem;
+    .meta-line {
+        font-size: 0.95rem;
         color: #555;
+        margin-top: 4px;
     }
 
+    /* ===== CONTENT ===== */
     .divider {
         height: 1px;
         background: #c9c9c9;
@@ -83,13 +96,24 @@
         border-bottom-color: #1f1f1f;
     }
 
+    /* ===== MOBILE ===== */
     @media (max-width: 768px) {
         .container {
             padding: 50px 18px;
         }
 
-        h1 {
-            font-size: 2rem;
+        .archive-header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .logo {
+            width: 52px;
+            height: 52px;
+        }
+
+        .institution {
+            font-size: 1.2rem;
         }
     }
 </style>
@@ -99,21 +123,32 @@
 
 <div class="container">
 
-    <header>
-        <h1>ArtWalk Deep Ellum</h1>
-        <div class="subtitle">
-            Archival project • 1985–1997
+    <!-- ARCHIVE HEADER -->
+    <header class="archive-header">
+
+        <img src="logo.png" alt="ArtWalk Deep Ellum Archive Mark" class="logo">
+
+        <div class="header-text">
+            <div class="institution">
+                ARTWALK DEEP ELLUM ARCHIVE
+            </div>
+            <div class="meta-line">
+                1985–1997 • Cultural Record • Dallas, Texas
+            </div>
         </div>
+
     </header>
 
     <div class="divider"></div>
 
+    <!-- OVERVIEW -->
     <div class="section-title">Overview</div>
     <p>
-        ArtWalk Deep Ellum was an independent art festival held in Dallas, Texas from 1985 to 1997.
-        It contributed to the development of Deep Ellum’s creative and cultural identity during that period.
+        ArtWalk Deep Ellum was an independent cultural event held in Dallas, Texas from 1985 to 1997.
+        It contributed to the development of Deep Ellum’s creative identity during that period.
     </p>
 
+    <!-- ARCHIVE -->
     <div class="section-title">Archive</div>
     <p>
         This project is dedicated to documenting and preserving the history of ArtWalk Deep Ellum through
@@ -121,10 +156,11 @@
     </p>
 
     <p>
-        It serves as an evolving public record intended to organize and protect historical materials related
-        to the event and its cultural impact.
+        It serves as an evolving public record intended to organize and maintain historical materials
+        related to the event and its cultural impact.
     </p>
 
+    <!-- STATUS -->
     <div class="section-title">Status</div>
     <p>
         This archive is currently under development. Materials are actively being collected and organized.
@@ -145,4 +181,3 @@
 
 </body>
 </html>
-```
