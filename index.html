@@ -6,63 +6,104 @@
 <title>ArtWalk Deep Ellum Archive</title>
 
 <style>
-    body {
+    * {
         margin: 0;
-        font-family: Georgia, serif;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
         background: #f4f4f2;
         color: #1f1f1f;
-        line-height: 1.7;
+        font-family: Georgia, serif;
+        line-height: 1.6;
     }
 
     .container {
         max-width: 850px;
         margin: 0 auto;
-        padding: 80px 24px;
+        padding: 70px 24px;
     }
 
+    /* HEADER */
     header {
-        margin-bottom: 40px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .logo {
+        width: 120px;
+        height: auto;
+        margin-bottom: 20px;
+        opacity: 0.95;
     }
 
     h1 {
-        font-weight: normal;
         font-size: 2.2rem;
-        margin-bottom: 5px;
+        font-weight: normal;
+        letter-spacing: 2px;
+        margin-bottom: 8px;
     }
 
     .subtitle {
+        font-size: 1rem;
         color: #555;
+        letter-spacing: 1px;
+    }
+
+    /* CONTENT */
+    .section {
+        margin-top: 40px;
+    }
+
+    .section-title {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 0.95rem;
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    p {
+        margin-bottom: 18px;
         font-size: 1rem;
     }
 
-    nav {
-        margin: 30px 0 50px;
+    .divider {
+        height: 1px;
+        background: #c9c9c9;
+        margin: 40px 0;
     }
 
-    nav a {
-        display: inline-block;
-        margin-right: 15px;
+    .footer {
+        margin-top: 60px;
+        font-size: 0.9rem;
+        color: #666;
+        text-align: center;
+    }
+
+    .footer a {
         color: #1f1f1f;
         text-decoration: none;
         border-bottom: 1px solid #aaa;
     }
 
-    nav a:hover {
+    .footer a:hover {
         border-bottom-color: #1f1f1f;
     }
 
-    .section-title {
-        text-transform: uppercase;
-        font-size: 0.95rem;
-        letter-spacing: 1px;
-        margin-top: 40px;
-        margin-bottom: 10px;
-    }
+    @media (max-width: 768px) {
+        .container {
+            padding: 50px 18px;
+        }
 
-    footer {
-        margin-top: 70px;
-        font-size: 0.9rem;
-        color: #666;
+        .logo {
+            width: 90px;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+        }
     }
 </style>
 </head>
@@ -71,34 +112,47 @@
 
 <div class="container">
 
-<header>
-    <h1>ArtWalk Deep Ellum</h1>
-    <div class="subtitle">
-        Archival Project (1985–1997)
+    <header>
+        <img src="logo.png" alt="ArtWalk Deep Ellum Archive Logo" class="logo">
+
+        <h1>ArtWalk Deep Ellum</h1>
+
+        <div class="subtitle">
+            Archival Project • 1985–1997
+        </div>
+    </header>
+
+    <div class="divider"></div>
+
+    <div class="section">
+        <div class="section-title">Overview</div>
+        <p>
+            ArtWalk Deep Ellum was a cultural event held in Dallas, Texas from 1985 to 1997,
+            contributing to the creative identity of Deep Ellum during that period.
+        </p>
     </div>
-</header>
 
-<nav>
-    <a href="./">Home</a>
-    <a href="./timeline/">Timeline</a>
-    <a href="./gallery/">Gallery</a>
-    <a href="./submissions/">Submissions</a>
-</nav>
+    <div class="section">
+        <div class="section-title">Archive</div>
+        <p>
+            This project documents and preserves the history of ArtWalk Deep Ellum through
+            photographs, flyers, printed materials, and community contributions.
+        </p>
+    </div>
 
-<div class="section-title">Overview</div>
-<p>
-This archive documents and preserves historical materials related to ArtWalk Deep Ellum,
-including photographs, flyers, and community records.
-</p>
+    <div class="section">
+        <div class="section-title">Status</div>
+        <p>
+            This archive is currently under development. Materials are actively being organized.
+        </p>
+    </div>
 
-<div class="section-title">Status</div>
-<p>
-This archive is actively under development.
-</p>
+    <div class="divider"></div>
 
-<footer>
-Dallas, Texas • ArtWalk Deep Ellum Archive
-</footer>
+    <div class="footer">
+        Dallas, Texas • ArtWalk Deep Ellum Archive (1985–1997)<br>
+        Contact: <a href="mailto:artwalkdeepellum@gmail.com">artwalkdeepellum@gmail.com</a>
+    </div>
 
 </div>
 
