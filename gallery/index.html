@@ -25,22 +25,10 @@ header {
     margin-bottom: 40px;
 }
 
-.logo-frame {
-    width: 180px;
-    height: 220px;
-    margin: 0 auto 20px auto;
-    border: 2px solid #999;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(255,255,255,.5);
-}
-
 .logo {
-    max-width: 120px;
-    max-height: 120px;
-    object-fit: contain;
+    width: 140px;
+    height: auto;
+    margin-bottom: 20px;
 }
 
 h1 {
@@ -83,6 +71,10 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
+p {
+    margin-bottom: 18px;
+}
+
 .footer {
     margin-top: 60px;
     text-align: center;
@@ -99,6 +91,24 @@ nav a:hover {
     text-decoration: none;
     border-bottom: 1px solid #aaa;
 }
+
+.footer a:hover {
+    border-bottom-color: #1f1f1f;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 40px 18px;
+    }
+
+    .logo {
+        width: 110px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+}
 </style>
 </head>
 
@@ -108,14 +118,12 @@ nav a:hover {
 
 <header>
 
-<div class="logo-frame">
-    <img src="logo.png" alt="ArtWalk Deep Ellum Archive Logo" class="logo">
-</div>
+<img src="logo.png" alt="ArtWalk Deep Ellum Archive Logo" class="logo">
 
 <h1>ArtWalk Deep Ellum</h1>
 
 <div class="subtitle">
-    Archival Project • 1985–1997
+    Gallery
 </div>
 
 <nav>
@@ -137,28 +145,39 @@ related to ArtWalk Deep Ellum will be cataloged and presented here.
 </p>
 
 <p>
-This collection is actively being assembled and expanded.
+This collection is actively being assembled and expanded as additional
+materials are located and documented.
 </p>
 
 <div class="divider"></div>
 
 <div class="footer">
+
     <p>Page Reference: AWDEA-GALLERY</p>
+
     <p>Collection ID: AWDEA-001</p>
+
     <p>Repository Status: Active</p>
+
     <p>
         Preserving photographs, flyers, printed materials,
         oral histories, and community memory related to
         ArtWalk Deep Ellum.
     </p>
-    <p>Contributions and historical materials are welcomed.</p>
+
+    <p>
+        Contributions and historical materials are welcomed.
+    </p>
+
     <p>
         Contact:
         <a href="mailto:artwalkdeepellum@gmail.com">
             artwalkdeepellum@gmail.com
         </a>
     </p>
+
     <p>Updated June 2026</p>
+
 </div>
 
 </div>
